@@ -1,0 +1,146 @@
+body {
+    background-color: #dddddd;
+    background-image: linear-gradient(90deg, rgba(200,0,0,.5) 50%, transparent 50%),
+    linear-gradient(rgba(200,0,0,.5) 50%, transparent 50%);
+    background-size: 50px 50px;
+    font-family: Helvetica Neue, sans-serif;
+}
+
+.form-section {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.pin-form, .pin-field {
+    width: 300px;
+    padding: 15px 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.message-window {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.enter-message {
+    width: 280px;
+    height: 200px;
+    background-color: #fa3e00;
+    border: 1px solid rgb(200,0,0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    padding: 15px;
+    color: #F4F5F6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-window {
+    margin-top: 10px;
+    border: 1px solid #F4F5F6;
+    color: rgb(200,0,0);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.pin, .cell {
+    border: 1px solid #cccccc;
+    padding: 4px 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.pin {
+    width: 100%;
+    font-size: 20px;
+}
+
+.cell {
+    font-size: 25px;
+    width: 40px;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pin:focus, .cell:focus {
+    box-shadow: 0 0 5px rgba(50, 200, 255, 0.5);
+    outline: none;
+}
+
+.for-message {
+    font-size: 11px;
+    width: 100%;
+    height: 15px;
+    color: #fa3e00;
+    margin-top: 5px;
+}
+
+.save-btn, .check-btn, .del-pin-btn {
+    margin-top: 1em;
+    margin-left: 160px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: #333;
+    border: none;
+    border-radius: 12px;
+    background-image: linear-gradient(to bottom, #ffffff, #dddddd);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 1px white;
+    font-size: 12px;
+    width: 140px;
+    cursor: pointer;
+}
+
+.pin-cell {
+    margin-right: 4px;
+}
+
+.pin-cell:last-child {
+    margin-right: 0;
+}
+
+.partitions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.display-none {
+    display: none;
+}
